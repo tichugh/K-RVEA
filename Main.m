@@ -66,7 +66,7 @@ for p = 1:length(Problems)
                 pop = pop(r_unique,:);
                 tt = 1;
                 while (isempty(pop))
-                    rt = randperm(size(Population,1));
+                    rt = randperm(size(current_pop,1));
                     pop = current_pop (rt(1:1),:);
                     Lia = ismember(pop,Population,'rows');
                     r_unique = find(Lia(:,1)==0);
